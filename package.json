@@ -1,0 +1,21 @@
+{
+  "name": "node-sample",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.0",
+    "express-session": "^1.17.0",
+    "mysql": "^2.18.1"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "release": "node ./build/app.js",
+    "start": "tsc && node ./build/app.js",
+    "debug": "tsc && nodemon --inspect-brk=9221 ./build/app.js",
+    "dev": "ts-node-dev --respawn --transpileOnly app.ts"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "author": "Sóska"
+}
